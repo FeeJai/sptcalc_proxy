@@ -3,7 +3,7 @@ from flask_cors import CORS
 import requests
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/i94/*": {"origins": "*"}}) #TODO: Correct
+cors = CORS(app, resources={r"/i94/*": {"origins": "*.sptcalc.com"}})
 SITE_NAME = 'http://proxy.sptcalc.com/'
 
 @app.route('/', methods=['GET'])
